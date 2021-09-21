@@ -1,0 +1,10 @@
+.form-container {
+    background-color: #FFFF;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20%;
+    box-shadow: rgb(0 0 0 / 94%) 0px 14px 20px 3px;
+}
