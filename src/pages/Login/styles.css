@@ -1,0 +1,15 @@
+.title-login {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+    margin-bottom: 0.35em;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .title-login {
+        font-size: 3rem;
+    }
+}

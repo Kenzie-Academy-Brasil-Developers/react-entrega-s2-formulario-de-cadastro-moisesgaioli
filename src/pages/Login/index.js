@@ -1,11 +1,11 @@
-import { Typography } from "@material-ui/core";
 import FormLogin from "../../components/FormLogin"
+import "./styles.css"
 
 
 const Login = () => {
     return (
         <>
-            <Typography variant="h1" gutterBottom fontSize="80px" color="white"> Faça seu login </Typography>
+            <h1 className="title-login"> Faça seu login </h1>
             <FormLogin/>
         </>
     )

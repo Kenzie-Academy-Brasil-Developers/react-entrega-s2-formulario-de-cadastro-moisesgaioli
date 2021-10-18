@@ -25,61 +25,63 @@ const FormLogin = () => {
     }
 
     return (
-        <form className="form-container" onSubmit={handleSubmit(submitData)}>
-            <div>
-                <TextField
-                    label="Nome"
-                    margin="normal"
-                    variant="outlined"
-                    size="medium"
-                    color="secondary"
-                    {...register("name")}
-                    error={!!errors.name}
-                    helperText={errors.name?.message}
-                />
-            </div>
-            <div>
-                <TextField
-                    label="Email"
-                    margin="normal"
-                    variant="outlined"
-                    size="medium"
-                    color="secondary"
-                    {...register("email")}
-                    error={!!errors.email}
-                    helperText={errors.email?.message}
-                />
-            </div>
-            <div>
-                <TextField
-                    label="Senha"
-                    type="password"
-                    margin="normal"
-                    variant="outlined"
-                    size="medium"
-                    color="secondary"
-                    {...register("password")}
-                    error={!!errors.password}
-                    helperText={errors.password?.message}
-                />
-            </div>
-            <div>
-                <TextField
-                    label="Confirmar senha"
-                    type="password"
-                    margin="normal"
-                    variant="outlined"
-                    size="medium"
-                    color="secondary"
-                    {...register("confirmPassword")}
-                    error={!!errors.confirmPassword}
-                    helperText={errors.confirmPassword?.message}
-                />
-            </div>
-            <div>
-                <Button variant="contained" type="submit" color="secondary"> Entrar </Button>
-            </div>
-        </form>
+        <div className="form-container">
+            <form className="form" onSubmit={handleSubmit(submitData)}>
+                <div>
+                    <TextField
+                        label="Nome"
+                        margin="normal"
+                        variant="outlined"
+                        size="medium"
+                        color="secondary"
+                        {...register("name")}
+                        error={!!errors.name}
+                        helperText={errors.name?.message}
+                    />
+                </div>
+                <div>
+                    <TextField
+                        label="Email"
+                        margin="normal"
+                        variant="outlined"
+                        size="medium"
+                        color="secondary"
+                        {...register("email")}
+                        error={!!errors.email}
+                        helperText={errors.email?.message}
+                    />
+                </div>
+                <div>
+                    <TextField
+                        label="Senha"
+                        type="password"
+                        margin="normal"
+                        variant="outlined"
+                        size="medium"
+                        color="secondary"
+                        {...register("password")}
+                        error={!!errors.password}
+                        helperText={errors.password?.message}
+                    />
+                </div>
+                <div>
+                    <TextField
+                        label="Confirmar senha"
+                        type="password"
+                        margin="normal"
+                        variant="outlined"
+                        size="medium"
+                        color="secondary"
+                        {...register("confirmPassword")}
+                        error={!!errors.confirmPassword}
+                        helperText={errors.confirmPassword?.message}
+                    />
+                </div>
+                <div>
+                    <Button variant="contained" type="submit" color="secondary"> Entrar </Button>
+                </div>
+            </form>
+        </div>
     )
 }
 

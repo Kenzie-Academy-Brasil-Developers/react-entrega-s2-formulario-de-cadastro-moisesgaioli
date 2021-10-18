@@ -1,5 +1,5 @@
 import { useHistory, useParams } from "react-router";
-import { Button, Typography } from "@material-ui/core"
+import { Button } from "@material-ui/core"
 import "./styles.css";
 
 const Home = () => {
@@ -9,10 +9,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <Typography variant="h1" gutterBottom>
-                Olá, {name}
-            </Typography>
-
+            <h1 className="home-title"> Olá, {name} </h1>
             <div>
                 <Button 
                     onClick={() => history.push("/") }
